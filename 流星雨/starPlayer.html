@@ -202,9 +202,10 @@
 
         function playBtnHandler(e){
             if (player.paused){
-                player.play()
+                 player.play()
             }else{
-                player.pause()
+            	  player.pause()
+              
             }
         }
 
@@ -214,8 +215,6 @@
             var newSrc=(/un/g.test(src))?"images/"+src.slice(9):"images/un"+src.slice(7);
             $(this).attr("src",newSrc);
         })
-
-
 
     })
 </script>
